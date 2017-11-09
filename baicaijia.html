@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>妈卖批-白菜价</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<body>
+<div class="container">
+    <!--首页-->
+    <header class="bcj_head">
+        <a href="index.html" class="fa fa-arrow-left page_back fl"></a>
+        <h3>
+            白菜价-淘宝内部券
+        </h3>
+    </header>
+    <nav id="wrapper" class="wrapper">
+        <ul class="clearfix bcj_nav">
+            <!--tmp-->
+        </ul>
+        <div class="icon_search">
+            <span></span>
+        </div>
+    </nav>
+    <main class="bcj-list">
+        <ul>
+            <!--tmp2-->
+        </ul>
+    </main>
+    <footer>
+        <div class="login_box clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class="back">返回顶部</a>
+        </div>
+        <p class="footer_info">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#"> -- 掌上比价平台</a>
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script type='text/html' id="bcjTmp1">
+    {{each result v i}}
+    <li class="{{i==titleid?'active':''}}">
+        <a href="baicaijia.html?titleid={{v.titleId}}">{{v.title}}</a>
+    </li>
+    {{/each}}
+</script>
+<script type='text/html' id="bcjTmp2">
+    {{each result v i}}
+    <li class="ui-border-tb ">
+        <%- v.productHref %>
+        <div class="pic"><i></i>
+            <%- v.productImg %>
+        </div>
+        <div class="inf">
+            <div class="i">
+                <div class="t">
+                    <%- v.productName %>
+                </div>
+                <div class="pr">
+                    <%- v.productPrice %>
+                </div>
+            </div>
+            <div class="o">
+                <%- v.productCouponRemain %>
+                <div class="b clearfix">
+                    <div class="q">
+                        <%- v.productCoupon %>
+                    </div>
+                    <div class="g">
+                        <%- v.productHref %>
+                        <a biz-itemid="56297410_8818824_54778388" isconvert="1" href="http://s.click.taobao.com/3HlIdQx" target="_blank">下单链接</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="js/base.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+</html>

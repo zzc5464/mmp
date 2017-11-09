@@ -1,0 +1,34 @@
+/**
+ * Created by zzc on 2017/11/5.
+ */
+@import "index";
+.cate_box {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.cate_title {
+  height: 40px;
+  line-height: 40px;
+  font-size:18px;
+  font-weight:500;
+  padding-left: 20px;
+  background-color: #e7e7e7;
+}
+.cate_content {
+  overflow: hidden;
+  height: 0;
+  transition:1s all;
+  &.show{
+    height:auto;
+  }
+  li {
+    float: left;
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+  }
+}

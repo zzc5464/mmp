@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>妈卖批-首页</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+</head>
+<body>
+<div class="container">
+    <!--首页-->
+    <header class="yhq_head">
+        <a href="javascript:history.go(-1);" class="fa fa-arrow-left page_back fl"></a>
+        <h3>
+            商城导航
+        </h3>
+        <div class="mmp_down">
+            <a href="javascript:;"></a>
+        </div>
+    </header>
+
+    <main class="sitemain clearfix">
+        <!--tmp-->
+
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="login_box clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class="back">返回顶部</a>
+        </div>
+        <p class="footer_info">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#"> -- 掌上比价平台</a>
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script type="text/html" id="tmp1">
+    {{each result v i}}
+    <a href="{{v.navHref}}">
+        <img src="{{v.navImg}}" alt="">
+        <span>{{v.navTitle}}</span>
+    </a>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/base.js"></script>
+<script src="js/sitenav.js"></script>
+</body>
+</html>

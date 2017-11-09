@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>妈卖批-hot品牌</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<div class="container">
+    <!--首页-->
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </h1>
+        <div class="mmp_down">
+            <a href="javascript:;"></a>
+        </div>
+    </header>
+    <!--搜索-->
+    <section class="search">
+        <input type="text" placeholder="输入你想要比价的商品">
+        <button>搜索</button>
+    </section>
+    <!--/搜索-->
+
+    <nav class="bd_nav">
+        <a href="index.html">首页</a> >
+        <a href="category.html">全部分类</a> >
+    </nav>
+    <section class="bd_hot">
+        <h3>
+            平板电视哪个牌子好
+        </h3>
+        <ul class="bdHot_list">
+            <!--tmp-->
+        </ul>
+    </section>
+    <section class="pay_hot">
+        <div class="pay_title">
+            平板电视产品销量排行
+        </div>
+        <ul class="pay_content">
+            <!--kkkk-->
+        </ul>
+    </section>
+    <section class="pay_new">
+        <h3 class="new_title">
+            <a href="#">平板电视最新评论</a>
+        </h3>
+        <div class="new_content">
+            <ul>
+                <li>
+                    <a href="" class="clearfix">
+                        <div class="new_top clearfix">
+                            <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="">
+                            <p class="line2">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+                        </div>
+                        <div class="new_bottom">
+                            <div class="new_name clearfix">
+                                <span class="fl">g***n：</span>
+                                <p class="fl new_star">
+                                    <i class="fa fa-star fl"></i>
+                                    <i class="fa fa-star fl"></i>
+                                    <i class="fa fa-star fl"></i>
+                                    <i class="fa fa-star fl"></i>
+                                    <i class="fa fa-star fl"></i>
+                                </p>
+                                <span class="fr">2016/2/18</span>
+                            </div>
+                            <div class="new_info">
+                                双12抢的单，14号收到货，速度奇快。特意使用了10来天，对产品有了一点的操控和了解，才来评价! 超级电视超级之处：1，颜值高，整体简洁，窄边框，前面板只有一个Letv的logo指示灯，无其他按键占用面板空间，外观简洁大气，边框做工精细。 2、操作简便，并可启用语音遥控，网络接入速度快，操作系统简洁，一目了然，运行速度相当流畅。 3、内容：乐视自家的视频APP内容相当丰富，科学归类，能快速找到想看的节目，第三方软件安装也方便，即使未登陆乐视会员，也能观看到高清影片及电视直播。 超级电视相对其他电视，有着很大的竞争优势。买这个电视，物有所值 评论发布自 购买自：乐视tv旗舰店
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!--tml3-->
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="login_box clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class="back">返回顶部</a>
+        </div>
+        <p class="footer_info">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#"> -- 掌上比价平台</a>
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script type="text/html" id="bdTmp">
+    {{each result v i}}
+    <li>
+        <a class="pro_info" href="productlist.html?categoryid={{v.categoryId}}&pageid=1">
+            <span class="bd_num">{{i+1}}</span>
+            <p>{{v.brandName}}</p>
+            <p>{{v.brandInfo}}</p>
+            <i class="fa fa-star"></i>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="bdTmp2">
+    {{each result v i}}
+    <li class="clearfix">
+            <a href="bijia.html?productid={{v.productId}}">
+                <%- v.productImg %>
+            <p class="line2">{{v.brandName}}</p>
+    <p class="pay_price">{{v.productPrice}}</p>
+    <p>
+    <span>{{v.productQuote}}</span>
+    <span>{{v.productCom}}</span>
+    </p>
+    <div class="clearfix">
+        <i class="fa fa-star fl"></i>
+        <i class="fa fa-star fl"></i>
+        <i class="fa fa-star fl"></i>
+        <i class="fa fa-star fl"></i>
+        <i class="fa fa-star fl"></i>
+    </div>
+    </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="bdTmp3">
+    {{each result v i}}
+    <li>
+        <a href="" class="clearfix">
+            <div class="new_top clearfix">
+                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="">
+                <p class="line2">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+            </div>
+            <div class="new_bottom">
+                <div class="new_name clearfix">
+                    <span class="fl">{{v.comName}}</span>
+                    <p class="fl new_star">
+                        <i class="fa fa-star fl"></i>
+                        <i class="fa fa-star fl"></i>
+                        <i class="fa fa-star fl"></i>
+                        <i class="fa fa-star fl"></i>
+                        <i class="fa fa-star fl"></i>
+                    </p>
+                    <span class="fr">{{v.comTime}}</span>
+                </div>
+                <div class="new_info">
+                    {{v.comContent}}
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/base.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

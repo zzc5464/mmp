@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>妈卖批-分类页</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cate.css">
+</head>
+<body>
+<div class="container">
+    <!--首页-->
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </h1>
+        <div class="mmp_down">
+            <a href="javascript:;"></a>
+        </div>
+    </header>
+    <!--搜索-->
+    <section class="search">
+        <input type="text" placeholder="输入你想要比价的商品">
+        <button>搜索</button>
+    </section>
+    <!--/搜索-->
+    <section class="cate_box">
+        <ul class="cateList">
+            <li>
+                <div class="cate_title">大家电</div>
+                <ul class="cate_content clearfix">
+
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+    <footer>
+
+        <div class="login_box clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class="back">返回顶部</a>
+        </div>
+        <p class="footer_info">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#"> -- 掌上比价平台</a>
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script type="text/html" id='cateTmp'>
+    {{each result v i}}
+    <li>
+        <div class="cate_title" data-id="{{v.titleId}}">{{v.title}}</div>
+        <ul class="cate_content clearfix">
+
+        </ul>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="cateTmp2">
+    {{each result v i}}
+    <li data-id="{{v.categoryId}}">
+        <a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">
+            {{v.category}}
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/base.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

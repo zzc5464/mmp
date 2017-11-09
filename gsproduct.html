@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>妈卖批-首页</title>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="container">
+    <!--首页-->
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </h1>
+        <div class="mmp_down">
+            <a href="javascript:;"></a>
+        </div>
+    </header>
+
+    <section class="search_list clearfix">
+        <a id="gs_jd" href="javascript:;">
+            <span>京东</span> <i class="fa fa-search"></i>
+        </a>
+        <a id="gs_px" href="javascript:;">
+            <span>地区</span> <i class="fa fa-search"></i>
+        </a>
+        <a id="gs_all" href="javascript:;">
+            <span>全部排序</span> <i class="fa fa-search"></i>
+        </a>
+        <span class="search_icon"></span>
+        <ul class="search_change search_source">
+            <!--tmp1-->
+        </ul>
+        <ul class="search_change search_map">
+            <!--tmp2-->
+        </ul>
+        <ul class="search_change search_all">
+            <li>
+                全部价格
+            </li>
+        </ul>
+    </section>
+
+    <main class="gs_main">
+        <ul class="clearfix">
+            <!--kkkk-->
+
+        </ul>
+    </main>
+
+    <footer>
+
+        <div class="login_box clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class="back">返回顶部</a>
+        </div>
+        <p class="footer_info">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#"> -- 掌上比价平台</a>
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script type="text/html" id="tmp1">
+    {{each result v i}}
+    <li data-shopid="{{v.shopId}}">
+        {{v.shopName}}
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="tmp2">
+    {{each result v i}}
+    <li data-areaid="{{v.areaId}}">
+        {{v.areaName}}
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="tmp3">
+    {{each result v i}}
+    <li>
+        <a href="">
+            <img src="{{v.productImg}}" alt="">
+            <p class="line1 gs_title">{{v.productName}}</p>
+            <p class="clearfix">
+                <span class="fl">{{v.productPrice}}</span>
+                <button class="fr">去凑单</button>
+            </p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/base.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>
